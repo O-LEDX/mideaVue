@@ -1,0 +1,284 @@
+/* 尾部容器选择器 */
+:root {
+    --color-primary: #6e7882;
+    --color-secondary: #498ff2;
+    --color-tertiary: #0092d8;
+    font-family: midea-type-regular;
+    line-height: 1.5;
+}
+.foot {
+    width: 100vw;
+}
+
+.foot .foot-container {
+    background-color: #efefef;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.foot .foot-container .footer-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    font-size: .9375vw;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    width: 100%;
+}
+.foot .foot-container .footer-container .ul-container {
+    display: flex;
+    margin: 4.1666666667vw 0 2.0833333333vw;
+    width: 100%;
+}
+
+/* A */
+.foot .foot-container .footer-container .ul-container .footer-A-ul {    
+    flex: 0 0 25%;
+    overflow: hidden;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-A-ul li {    
+    font-size: 1.0416666667vw;
+    height: 2.0833333333vw;
+    line-height: 2.0833333333vw;
+    margin-bottom: 1.25vw;
+    margin-right: 2.0833333333vw;
+    padding: 0 1.0416666667vw;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-A-ul li div {
+    width: 100%;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-A-ul li div a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: transparent;
+}
+
+/* B */
+.foot .foot-container .footer-container .ul-container .footer-B-ul {    
+    flex: 0 0 25%;
+    overflow: hidden;}
+
+.foot .foot-container .footer-container .ul-container .footer-B-ul li {    
+    font-size: 1.0416666667vw;
+    height: 2.0833333333vw;
+    line-height: 2.0833333333vw;
+    margin-bottom: 1.25vw;
+    margin-right: 2.0833333333vw;
+    padding: 0 1.0416666667vw;}
+
+.foot .foot-container .footer-container .ul-container .footer-B-ul li div {
+    width: 100%;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-B-ul li div a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: transparent;
+}
+
+
+/* C */
+.foot .foot-container .footer-container .ul-container .footer-C-ul {    
+    flex: 0 0 25%;
+    overflow: hidden;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-C-ul li {    
+    font-size: 1.0416666667vw;
+    height: 2.0833333333vw;
+    line-height: 2.0833333333vw;
+    margin-bottom: 1.25vw;
+    margin-right: 2.0833333333vw;
+    padding: 0 1.0416666667vw;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-C-ul li div {
+    width: 100%;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-C-ul li div a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: transparent;
+}
+
+
+/* D */
+.foot .foot-container .footer-container .ul-container .footer-D-ul {    
+    flex: 0 0 25%;
+    overflow: hidden;}
+
+.foot .foot-container .footer-container .ul-container .footer-D-ul li {    
+    font-size: 1.0416666667vw;
+    height: 2.0833333333vw;
+    line-height: 2.0833333333vw;
+    margin-bottom: 1.25vw;
+    margin-right: 2.0833333333vw;
+    padding: 0 1.0416666667vw;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-D-ul li div {
+    width: 100%;
+}
+
+.foot .foot-container .footer-container .ul-container .footer-D-ul li div a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: transparent;
+}
+.foot .foot-container .footer-container .ul-container .footer-A-ul li div a:hover{
+    color: var(--color-tertiary);
+}
+.foot .foot-container .footer-container .ul-container .footer-B-ul li div a:hover{
+    color: var(--color-tertiary);
+}
+.foot .foot-container .footer-container .ul-container .footer-C-ul li div a:hover{
+    color: var(--color-tertiary);
+}
+.foot .foot-container .footer-container .ul-container .footer-D-ul li div a:hover{
+    color: var(--color-tertiary);
+}
+
+
+
+/* legal */
+.legel{    
+    background-color: #34354f;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: .8333333333vw;
+    letter-spacing: .0390625vw;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+}
+
+.legel .legel-container{
+    display: flex;
+    font-size: .8333333333vw;
+    justify-content: space-between;
+    line-height: 3.125vw;
+    min-height: 3.125vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.legel .legel-container .legel-left {       
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: flex-start;
+    margin-right: 1.0416666667vw;
+    max-width: 100%;
+}
+
+.legel .legel-container .legel-left-text-A {
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    height: 3.125vw;
+    line-height: 3.125vw;
+    margin-right: 3.125vw;
+    max-width: 100%;
+}
+
+.legel .legel-container .legel-left-text-A span {    
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.legel .legel-container .legel-left-text-B {    
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    height: 3.125vw;
+    line-height: 3.125vw;
+    margin-right: 3.125vw;
+    max-width: 100%;
+}
+
+.legel .legel-container .legel-left-text-B a {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+.legel .legel-container .legel-left-text-C {    
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    height: 3.125vw;
+    line-height: 3.125vw;
+    margin-right: 3.125vw;
+    max-width: 100%;
+}
+
+.legel .legel-container .legel-left-text-C div {
+    width:100%
+}
+
+.legel .legel-container .legel-left-text-C div span {       
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.legel .legel-container .legel-right {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.legel .legel-container .legel-right a {
+    margin-left: 0;
+    text-align: left;
+    height: 3.125vw;
+    line-height: 3.125vw;
+    margin-left: 1.5625vw;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美的首页ver1.1.0</title>
+    <!-- icon -->
+    <link rel="icon" href="//cn-res.midea.com/etc.clientlibs/mideacn-aem/clientlibs/clientlib-site/resources/img/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="//cn-res.midea.com/etc.clientlibs/mideacn-aem/clientlibs/clientlib-site/resources/img/common/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="//cn-res.midea.com/etc.clientlibs/mideacn-aem/clientlibs/clientlib-site/resources/img/common/favicon.ico">
+
+    <!-- 样式表 -->
+    <link rel="stylesheet" href=".//css/meyer.css">
+    <link rel="stylesheet" href=".//css/midea-nav.css">
+    <link rel="stylesheet" href=".//css/midea-banner.css">
+    <link rel="stylesheet" href=".//css/midea-quick.css">
+    <link rel="stylesheet" href=".//css/midea-stock.css">
+    <link rel="stylesheet" href=".//css/midea-tech.css">
+    <link rel="stylesheet" href=".//css/midea-foot.css">
+
+    <!-- js -->
+    <script src="./js/nav.js" async></script>
+    <script src="./js/column.js" async></script>
+    <!-- 引入ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js" defer></script>
+    <script src="./js/wonderland.js" defer></script>
+    <script src="./js/chart1.js" defer></script>
+    <script src="./js/chart2.js" defer></script>
+</head>
+<body>
+
+    <!-- 标题导航栏 -->
+<div class="head">
+    <div class="header">
+        <div class="header-position"><!-- padding占位 -->
+            <div class="header-banner"><!--大位置 -->
+                <div class="header-banner-nav"><!--容器排布 -->
+                    <div class="header-banner-nav-container"> <!-- 导航栏容器 -->
+                        <div class="logo">
+                            <img src="./source/logo.png" class="logo-pic" loading="lazy" alt="logo">
+                        </div>
+                        <div class="nav-list">
+                            <div class="nav-list-container">
+                                <div class="list-item-career"><a href="">美的业务</a></div>
+                                <div class="list-item-investor"><a href="">投资者关系</a></div>
+                                <div class="list-item-shop"><a href="">美的商城</a></div>
+                                <div class="list-item-home"><a href="">美的美居</a></div>
+                                <div class="list-item-service"><a href="">美的服务</a></div>
+                                <div class="list-item-join"><a href="">加入美的</a></div>
+                                <div class="list-item-about"><a href="">关于美的</a></div>
+                                <div class="list-item-supplier"><a href="">美的供应商</a></div>
+                            </div>
+                        </div>
+                        <div class="nav-right">
+                            <div class="search">
+                            <img src="./source/搜索放大镜.png" loading="lazy" class="search-pic" alt="搜索图片">
+                            </div>
+                            <div class="language">
+                            <img src="./source/语言图标.png" loading="lazy" class="lang-pic" alt="语言图片">
+                            </div>
+                            <div class="quick-switch-lang">
+                                <div class="ch"><a href="">中文</a></div>
+                                    <span>/</span>
+                                <div class="en"><a href="">EN</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-list">
+            <div class="detail-list-container">
+                <div class="detail-list-container-career">
+                <ul class="detail-list-container-career-ul">
+                    <li><a href="">总览</a></li>
+                    <li><a href="">智能家居</a></li>
+                    <li><a href="">工业技术</a></li>
+                    <li><a href="">楼宇科技</a></li>
+                    <li><a href="">机器人与自动化</a></li>
+                    <li><a href="">美的医疗</a></li>
+                    <li><a href="">安得智联</a></li>
+                    <li><a href="">专业平台</a></li>
+                </ul>
+                </div>
+                <div class="detail-list-container-investor">
+                <ul class="detail-list-container-investor-ul">
+                    <li><a href="">总览</a></li>
+                    <li><a href="">致股东的信</a></li>
+                    <li><a href="">公司治理</a></li>
+                    <li><a href="">股票信息</a></li>
+                    <li><a href="">财务报告</a></li>
+                    <li><a href="">信息披露</a></li>
+                    <li><a href="">可持续发展</a></li>
+                </ul>
+                </div>
+                <div class="detail-list-container-shop">
+                <ul class="detail-list-container-shop-ul">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                </div>
+                <div class="detail-list-container-live">
+                <ul class="detail-list-container-live-ul">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                </div>
+                <div class="detail-list-container-service">
+                <ul class="detail-list-container-service-ul">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                </div>
+                <div class="detail-list-container-join">
+                <ul class="detail-list-container-join-ul">
+                    <li><a href="">总览</a></li>
+                    <li><a href="">工作在美的</a></li>
+                    <li><a href="">美的文化</a></li>
+                    <li><a href="">职业发展</a></li>
+                    <li><a href="">社会招聘</a></li>
+                    <li><a href="">应届毕业生招聘</a></li>
+                </ul>
+                </div>
+                <div class="detail-list-container-about">
+                <ul class="detail-list-container-about-ul">
+                    <li><a href="">总览</a></li>
+                    <li><a href="">创新</a></li>
+                    <li><a href="">制造</a></li>
+                    <li><a href="">新闻中心</a></li>
+                </ul>
+                </div>
+                <div class="detail-list-container-supplier">
+                <ul class="detail-list-container-supplier-ul">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                </div>
+                <!-- 语言挑选 -->
+                <div class="detail-list-container-language">
+                    <ul class="detail-list-container-language-ul">
+                        <li style="cursor: default;">语言选择</li>
+                        <li><a href="">中文</a></li>
+                        <li><a href="">英文</a></li>
+                        <li><a href="">日文</a></li>
+                        <li><a href="">韩文</a></li>
+                        <li><a href="">法文</a></li>
+                        <li><a href="">德文</a></li>
+                        <li><a href="">西班牙文</a></li>
+                        <li><a href="">葡萄牙文</a></li>
+                        <li><a href="">意大利文</a></li>
+                        <li><a href="">荷兰文</a></li>
+                        <li><a href="">波兰文</a></li>
+                        <li><a href="">俄文</a></li>
+                        <li><a href="">土耳其文</a></li>
+                        <li><a href="">捷克文</a></li>
+                        <li><a href="">匈牙利文</a></li>
+                        <li><a href="">芬兰文</a></li>
+                        <li><a href="">瑞典文</a></li>
+                        <li><a href="">挪威文</a></li>
+                        <li><a href="">丹麦文</a></li>
+                    </ul>
+                </div>
+                <!-- 搜索框 -->
+                 <div class="detail-list-container-search">
+                    <div class="detail-list-container-search-container">
+                        <input type="text" placeholder="搜索">
+                        <button type="submit">
+                            <img src="./source/搜索放大镜.png" loading="lazy" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 首页大图片带缩放 -->
+<div class="banner">
+    <div class="banner-container">
+       <img src="./source/首页大banner带字版本.jpg"  alt="首页大banner带字版本">
+    </div>
+</div>
+
+
+<!-- 快览区 -->
+<div class = "kuailan">
+    <div class="kuailan-container">
+        <div class="kuailan-title">
+            <div class="kuailan-title-container">
+                快览
+            </div>
+        </div>
+        <div class="kuailan-text">
+            <div class="kuailan-text-container">
+                <div class="kuailan-text-container-item-earn">
+                    <div class="earn-percent">
+                        +105%
+                    </div>
+                    <div class="number-detail-container">
+                        <div class="earn-number-container">502</div>
+                        <div class="earn-numbertext-container">亿元</div>
+                    </div>
+                    <div class="earn-detail">
+                        营业总收入
+                    </div>
+                </div>
+                <div class="kuailan-text-container-item-profit">
+                    <div class="profit-percent">
+                        +1919%
+                    </div>
+                    <div class="number-detail-container">
+                        <div class="profit-number-container">810</div>
+                        <div class="profit-numbertext-container">亿元</div>
+                    </div>
+                    <div class="profit-detail">
+                            归母净利润
+                    </div>
+                </div>
+                <div class="kuailan-text-container-item-cash">
+                    <div class="cash-percent">
+                        +4.5%
+                    </div>
+                    <div class="number-detail-container">
+                        <div class="cash-number-container">605</div>
+                        <div class="cash-numbertext-container">亿元</div>
+                    </div>
+                    <div class="cash-detail">
+                            经营性活动现金流
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="kuailan-underline">
+            <div class="kuailan-underline-container">
+                数据来自2025年年度报告
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 股票数据图 -->
+<div class="stock-container">
+    <div class="stock-title-container">
+        股价
+    </div>
+    <div class="stock-type-container">
+        <div class="A-stock">A股</div>
+        <div class="H-stock">H股</div>
+    </div>
+    <div class="stock-chart-container">
+        <div class="stock-chart-A-container">
+            <div class="stock-A-chart">
+
+            </div>
+        </div>
+        <div class="stock-chart-H-container">
+            <div class="stock-H-chart">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 技术展示区 -->
+<div class="tech-show-container">
+    <div class="tech-show-live">
+        <div class="tech-show-live-container">
+            <div class="tech-show-live-pic">
+                <img src="./source/智能家居1920x900.jpg" alt="智能家居">
+            </div>
+            <div class="tech-show-live-text-container">
+                <div class='headline'>智能家居</div>
+                <div class="text">为C端用户提供<br>最佳体验的全屋智能家居及服务</div>
+                <div class="btn-container">
+                    <div class="btn-a-container">
+                        <a href="" class="btn-container-a">
+                            <div class="btn">
+                                了解更多
+                            </div>
+                            <div class="btn-right-pic">
+                                <div class="icon"> </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-show-tech">
+        <div class="tech-show-tech-container">
+            <div class="tech-show-tech-pic">
+                <img src="./source/工业技术1920X900.jpg" alt="工业技术">
+            </div>
+            <div class="tech-show-tech-text-container">
+                <div class='headline'>工业技术</div>
+                <div class="text">美的工业技术，以科技为核心驱动力，聚焦新能源与暖通家电、新能源汽车、机器人核心部件领域，为客户提供绿色、高效、智慧的产品与技术解决方案，携手共创美好工业。</div>
+                <div class="btn-container">
+                    <div class="btn-a-container">
+                        <a href="" class="btn-container-a">
+                            <div class="btn">
+                                了解更多
+                            </div>
+                            <div class="btn-right-pic">
+                                <div class="icon"> </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tech-show-building">
+        <div class="tech-show-building-container">
+            <div class="tech-show-building-pic">
+                <img src="./source/楼宇科技.jpg" alt="楼宇科技">
+            </div>
+            <div class="tech-show-building-text-container">
+                <div class='headline'>楼宇科技</div>
+                <div class="text">美的楼宇科技，作为负责楼宇产品、服务及相关产业的经营主体，以楼宇数字化服务平台为核心，打通楼宇交通流、信息流、体验流、能源流，为用户提供智能化、数字化、低碳化的楼宇建筑整体解决方案。</div>
+                <div class="btn-container">
+                    <div class="btn-a-container">
+                        <a href="" class="btn-container-a">
+                            <div class="btn">
+                                了解更多
+                            </div>
+                            <div class="btn-right-pic">
+                                <div class="icon"> </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tech-show-robot">
+        <div class="tech-show-robot-container">
+            <div class="tech-show-robot-pic">
+                <img src="./source/机器人与自动化1920X900.jpg" alt="机器人与自动化">
+            </div>
+            <div class="tech-show-robot-text-container">
+                <div class='headline'>机器人与自动化</div>
+                <div class="text">美的机器人及自动化，主要围绕未来工厂相关领域，包括工业机器人、物流自动化系统及传输系统解决方案，医疗、娱乐、新消费领域解决方案等。</div>
+                <div class="btn-container">
+                    <div class="btn-a-container">
+                        <a href="" class="btn-container-a">
+                            <div class="btn">
+                                了解更多
+                            </div>
+                            <div class="btn-right-pic">
+                                <div class="icon"> </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tech-show-medical">
+        <div class="tech-show-medical-container">
+            <div class="tech-show-medical-pic">
+                <img src="./source/美的医疗1920X900.jpg" alt="美的医疗">
+            </div>
+            <div class="tech-show-medical-text-container">
+                <div class='headline'>美的医疗</div>
+                <div class="text">美的医疗是美的集团旗下的医疗健康业务品牌，是集团重要发展板块之一。美的医疗以科技赋能医疗，专注于「前勤」医院临床医技与「后勤」建设运维板块。</div>
+                <div class="btn-container">
+                    <div class="btn-a-container">
+                        <a href="" class="btn-container-a">
+                            <div class="btn">
+                                了解更多
+                            </div>
+                            <div class="btn-right-pic">
+                                <div class="icon"> </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tech-show-connect">
+        <div class="tech-show-connect-container">
+            <div class="tech-show-connect-pic">
+                <img src="./source/安得智联1920X900.jpg" alt="安得智联">
+            </div>
+            <div class="tech-show-connect-text-container">
+                <div class='headline'>安得智联</div>
+                <div class="text">安得智联作为美的集团智慧物流板块，致力于为客户提供端到端数智化供应链解决方案，安得智联对外输出独特的“1+3”供应链物流模型， “1”是指端到端物流能力，“3”即“生产物流、一盘货统仓统配、最后一公里送装一体”，能为客户提供从原材料到工厂到成品，从成品下线到分销门店/2C的全链路、一体化的专业供应链服务。</div>
+                <div class="btn-container">
+                    <div class="btn-a-container">
+                        <a href="" class="btn-container-a">
+                            <div class="btn">
+                                了解更多
+                            </div>
+                            <div class="btn-right-pic">
+                                <div class="icon"> </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 尾部 -->
+<div class="foot">
+    <div class="foot-container">
+        <div class="footer-container">
+            <div class="ul-container">
+                <ul class="footer-A-ul">
+                    <li><div><a href="">关于美的</a></div></li>
+                    <li><div><a href="">创新</a></div></li>
+                    <li><div><a href="">创造</a></div></li>
+                    <li><div><a href="">新闻中心</a></div></li>
+                </ul>
+                <ul class="footer-B-ul">
+                    <li><div><a href="">美的业务</a></div></li>
+                    <li><div><a href="">智能家居</a></div></li>
+                    <li><div><a href="">工业技术</a></div></li>
+                    <li><div><a href="">楼宇科技</a></div></li>
+                    <li><div><a href="">机器人与自动化</a></div></li>
+                    <li><div><a href="">美的医疗</a></div></li>
+                    <li><div><a href="">安得智联</a></div></li>
+                </ul>
+                <ul class="footer-C-ul">
+                    <li><div><a href="">投资者关系</a></div></li>
+                    <li><div><a href="">致股东的信</a></div></li>
+                    <li><div><a href="">股票信息</a></div></li>
+                    <li><div><a href="">财务报告</a></div></li>
+                    <li><div><a href="">公司治理</a></div></li>
+                </ul>
+                <ul class="footer-D-ul">
+                    <li><div><a href="">加入美的</a></div></li>
+                    <li><div><a href="">工作在美的</a></div></li>
+                    <li><div><a href="">职业发展</a></div></li>
+                    <li><div><a href="">美的文化</a></div></li>
+                    <li><div><a href="">社会招聘</a></div></li>
+                    <li><div><a href="">应届毕业生招聘</a></div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="legel">    
+    <div class="legel-container">
+        <div class="legel-left">
+            <div class="legel-left-text-A">
+                <span>&copy;2025美的集团股份有限公司</span>
+            </div>
+                <div class="legel-left-text-B">
+                <a href="">
+                    粤ICP备09215446号-1
+                </a>
+            </div>
+            <div class="legel-left-text-C">
+                <span style="margin-right:80px;">粤公网安60602002513号</span>
+            </div>
+        </div>
+        <div class="legel-right">
+            <a href="">隐私协议</a>
+            <a href="">行为规范</a>
+            <a href="">人权声明</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

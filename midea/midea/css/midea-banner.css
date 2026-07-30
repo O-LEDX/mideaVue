@@ -1,0 +1,34 @@
+/* 首页大图片带缩放 */
+.banner{
+    width: 100vw;
+    position: relative;
+    box-sizing: inherit;
+    padding-bottom: 6.25vw;
+}
+
+.banner .banner-container{
+    width: 100%;
+    border-bottom-left-radius: 1.0416666667vw;
+    border-bottom-right-radius: 1.0416666667vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: hidden;
+}
+
+.banner .banner-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    animation: scaleani 18s infinite ease;
+}
+    @keyframes scaleani {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
