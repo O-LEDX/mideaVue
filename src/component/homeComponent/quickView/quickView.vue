@@ -35,7 +35,7 @@
 </template>
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useLangStore } from '../../store/useLanguage'
+import { useLangStore } from '@/store/useLanguage'
 
 let textData
 let constTextData
@@ -165,7 +165,6 @@ constTextData=computed(()=>{
 }
 .kuailan .kuailan-container .kuailan-text .kuailan-text-container .kuailan-text-container-item .detail{
     color: var(--color-tertiary);
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     font-size: 1.0416666667vw;

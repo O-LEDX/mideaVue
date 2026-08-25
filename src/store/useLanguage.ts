@@ -10,14 +10,12 @@ export const useLangStore=defineStore('lang',()=>{
         switch(lang){
         case 'chinese':
             currentBase.value=CHINESE;
-            console.log(currentBase.value)
             break;
         case 'english':
             currentBase.value=ENGLISH;
-            console.log(currentBase.value)
             break;
         default :
-        return  console.log()
+        return
             }
         }
 

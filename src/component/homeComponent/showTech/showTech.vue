@@ -27,8 +27,8 @@
 </div>
 </template>
 <script setup lang="ts">
-import { ref,computed } from 'vue'
-import { useLangStore } from '../../store/useLanguage'
+import { computed } from 'vue'
+import { useLangStore } from '@/store/useLanguage'
 
 let textData
 let params=useLangStore()

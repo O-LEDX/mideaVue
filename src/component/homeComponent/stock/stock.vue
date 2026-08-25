@@ -35,7 +35,7 @@
 </template>
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useLangStore } from '../../store/useLanguage'
+import { useLangStore } from '@/store/useLanguage'
 let textData
 let buttonText
 

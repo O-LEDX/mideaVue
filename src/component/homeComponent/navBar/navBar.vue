@@ -11,9 +11,9 @@
                         <div class="nav-list">
                             <div class="nav-list-container">
                                 <div 
-                                @mouseover="handleShowDetail(item.id)"
-                                v-for="item in navList[0].navBarList" :key="item.id">
-                                    <a href="">{{item.name}}</a>
+                                v-for="item in navList[0].navBarList" :key="item.id"
+                                @mouseover="handleShowDetail(item.id)">
+                                    <span @click="handleView(item.id)">{{item.name}}</span>
                                 </div>
                             </div>
                         </div>
@@ -126,20 +126,23 @@
 
 <script setup lang="ts">
 import {ref} from 'vue'
-import { useLangStore } from '../../store/useLanguage'
+import { useLangStore } from '@/store/useLanguage'
 import {computed} from 'vue'
+import {routerTable} from './routerTable.ts'
+import { useRouter } from 'vue-router'
+
+let router = useRouter()
+
 let navList;
-
 let params=useLangStore()
-
-navList=computed(()=>{
-    return params.currentBase[0].content
-})
-
 //1267
 let showDetail=ref(false),career=ref(false),investor=ref(false),join=ref(false),about=ref(false)  
 let lang=ref(false),search=ref(false)
 let counter = ref(0)
+
+navList=computed(()=>{
+    return params.currentBase[0].content
+})
 
 function handleShowLang(){
     investor.value=false
@@ -237,6 +240,10 @@ function handleShowDetail(id:number){
 
 function handleChangeLang(lang:string){
     params.handleLang(lang)
+}
+
+function handleView(id:number){
+    router.push({name:routerTable[id-1].name})
 }
 
 
@@ -349,15 +356,16 @@ function handleChangeLang(lang:string){
     align-items: center;
     justify-content: center;
 }
-.head .header .header-position .header-banner .header-banner-nav .header-banner-nav-container .nav-list .nav-list-container div a{
+.head .header .header-position .header-banner .header-banner-nav .header-banner-nav-container .nav-list .nav-list-container div span{
     text-align: inherit;
     color: var(--color-primary);
     font-family: inherit;
     line-height: inherit;
     text-decoration: inherit;
     font-size: 1vw;
+    cursor: pointer;
 }
-.head .header .header-position .header-banner .header-banner-nav .header-banner-nav-container .nav-list .nav-list-container div a:hover{
+.head .header .header-position .header-banner .header-banner-nav .header-banner-nav-container .nav-list .nav-list-container div span:hover{
     color: var(--color-secondary);
 }
 
